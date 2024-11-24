@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoqxSaur</title>
+  <style>
+    body {
+      font-family: 'Chubby Flower', sans-serif;
+      background-color: #FFE5B8; /* Background color */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+
+    .home-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .game-title {
+      font-size: 5rem; /* Increased size */
+      color: #B1DD9E; /* Title color set to #B1DD9E */
+      text-shadow: 4px 4px #ffcc00; /* Adds a shadow for a cute effect */
+      margin-bottom: 30px;
+    }
+
+    .dino-cover {
+      width: 250px; /* You can adjust this size */
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .menu-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn {
+      font-size: 2rem; /* Increased font size for the buttons */
+      padding: 15px 30px; /* Increased button size */
+      background-color: #ffcc00;
+      color: #333;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff9900;
+    }
+
+    .next-btn {
+      font-size: 2rem;
+      padding: 10px 30px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ffcc00;
+      color: #333;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-btn:hover {
+      background-color: #ff9900;
+    }
+
+    .dev-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 1.2rem;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="home-screen">
+    <h1 class="game-title">NoqxSaur</h1>
+    <div class="menu-buttons">
+      <button class="btn" onclick="startGame()">Start Game</button>
+      <button class="btn" onclick="showSettings()">Settings</button>
+    </div>
+  </div>
+  <button class="next-btn" onclick="goToNext()">Next &gt;</button>
+  <div class="dev-text">Developed by: dinoqx_z</div>
+
+  <script>
+    // Functions for the buttons
+    function startGame() {
+      alert('Starting game...');
+    }
+
+    function showSettings() {
+      alert('Opening settings...');
+    }
+
+    function goToNext() {
+      window.location.href = 'https://dinoqx.w3spaces-preview.com/index.html'; // Replace with the next page URL
+    }
+  </script>
+</body>
+</html>
